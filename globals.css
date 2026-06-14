@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 22% 5%;
+  --foreground: 210 30% 96%;
+  --card: 220 18% 8%;
+  --card-foreground: 210 30% 96%;
+  --primary: 162 78% 48%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 42 92% 54%;
+  --secondary-foreground: 220 20% 8%;
+  --muted: 220 14% 14%;
+  --muted-foreground: 215 14% 70%;
+  --accent: 194 78% 20%;
+  --accent-foreground: 190 82% 88%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 18%;
+  --input: 220 13% 20%;
+  --ring: 162 78% 48%;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 360px),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.14), transparent 380px),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.3), rgba(2, 6, 23, 0) 340px),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(3, 7, 18, 0.88));
+  border-color: rgba(148, 163, 184, 0.18);
+}
