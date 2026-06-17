@@ -1,0 +1,46 @@
+export type UserSegment = "individual" | "msme";
+
+export type FinancialInput = {
+  segment: UserSegment;
+  monthlyIncome: number;
+  fixedExpense: number;
+  variableExpense: number;
+  savingsAsset: number;
+  physicalAsset: number;
+  investmentValue: number;
+  debt: number;
+  monthlyDebtPayment: number;
+  biRate: number;
+  inflationRate: number;
+  loanRate: number;
+  incomeShock: number;
+};
+
+export type InventoryItem = {
+  id: string;
+  name: string;
+  quantity: number;
+  unitCost: number;
+};
+
+export type RiskStatus = "Resilient" | "Near Crisis" | "Bankrupt";
+
+export type FinancialSnapshot = {
+  stressedIncome: number;
+  baseExpense: number;
+  inflationAdjustedExpense: number;
+  monthlyDebtService: number;
+  totalExpense: number;
+  inventoryValue: number;
+  totalAssets: number;
+  liquidAssets: number;
+  netWorth: number;
+  monthlySurplus: number;
+  debtRatio: number;
+  leverageRatio: number;
+  cashRunway: number;
+  realPurchasingPower: number;
+  financialScore: number;
+  riskStatus: RiskStatus;
+  statusReason: string;
+};
