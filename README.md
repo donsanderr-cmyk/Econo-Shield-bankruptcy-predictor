@@ -1,8 +1,11 @@
 # Econo-Shield
 
+[Live Demo Aplikasi](https://econo-shield.vercel.app)
+
 Econo-Shield adalah dashboard peringatan risiko finansial untuk individu dan UMKM. Aplikasi menggunakan Next.js, API Route, Drizzle ORM, SQLite/libSQL, Better Auth, serta dataset BI Rate, inflasi M-to-M, suku bunga kredit, dan UMP.
 
 ## Library
+
 
 - `Next.js`: frontend dan backend Route Handler dalam satu aplikasi.
 - `React`: state dan interaksi dashboard.
